@@ -1,7 +1,5 @@
-import { useEffect, useCallback } from 'react';
 import './App.css';
 import TextEditer from './components/TextEditer';
-import Quill from 'quill';
 import 'quill/dist/quill.snow.css';
 import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {v4 as uuidV4 } from 'uuid';
