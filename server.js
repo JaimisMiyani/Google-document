@@ -14,10 +14,10 @@ mongoose.connect(process.env.MONGO_URL || process.env.DB_CONNECT, {
     console.log('Conected to db!');
 });
 
-if (process.env.NODE_ENV === 'production') {
-    // Exprees will serve up production assets
-    app.use(express.static('client/build'));
-}
+// if (process.env.NODE_ENV === 'production') {
+//     // Exprees will serve up production assets
+//     app.use(express.static('client/build'));
+// }
 
 const io = require("socket.io")(PORT, {
     cors: {
