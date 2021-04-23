@@ -5,7 +5,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 9001;
 
-mongoose.connect(process.env.MONGODB_URL || process.env.DB_CONNECT, {
+mongoose.connect(process.env.MONGO_URL || process.env.DB_CONNECT, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
